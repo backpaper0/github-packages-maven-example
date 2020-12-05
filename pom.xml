@@ -30,6 +30,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
 			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-source-plugin</artifactId>
@@ -65,4 +73,6 @@
 					<url>https://maven.pkg.github.com/backpaper0/github-packages-maven-example</url>
 				</repository>
 			</distributionManagement>
+		</profile>
+	</profiles>
 </project>
