@@ -7,6 +7,6 @@ public class HelloWorld {
 	}
 
 	public String sayHello() {
-		return sayHello("world");
+		return sayHello("worldx");
 	}
 }
