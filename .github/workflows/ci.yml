@@ -58,4 +58,4 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Release Maven package
-        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} mvn -B deploy -DskipTests -s settings.xml
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} mvn -P release -B deploy -DskipTests -s settings.xml
